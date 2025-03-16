@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.menu_bar{
+    position: sticky;  
+    top: 0;
+    font-family: 'Times New Roman';
+    font-weight:bolder;
+    background-image: url(bluebg.jpg);
+    height: 71px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: auto;       
+}
+.menu_bar ul a span {
+   position:fixed;
+   height: auto;
+   left: 0px; 
+   width: 25px;
+}
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li{
+    display: inline-block;
+    padding: 10px 30px;
+    position: relative;
+}
+.menu_bar ul li a{
+    display: block;
+    color: white;
+    text-decoration:none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.menu_bar ul li a:hover{
+    color: rgb(36, 17, 244) ;
+    background-color: #232b2b;
+}
+.dropdown ul li {
+    display: block;
+}
+.dropdown{
+    display: none;
+}
+.menu_bar ul li:focus-within .dropdown,
+.menu_bar ul li:hover .dropdown{
+     display: block;
+     position: absolute;
+     left: 0;
+     top: 100%;
+    
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li{
+    width: 150px;
+    padding: 10px;
+    background-image: url(bluebg.jpg);
+}
+
+
+#check{
+    display: none;
+}
+.menu_bar label{
+    font-size:20px;
+    font-weight:bolder;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media(max-width:991px){
+
+    .menu_bar{
+        padding: 20px;
+        width: 93%;
+        
+    }
+    .menu_bar label{
+        display: initial;
+    }
+    .menu_bar .navbar{
+        position: absolute;
+        top:100%;
+        left:0;
+        right:0;
+        background-image: url(bluebg.jpg);
+        display: none;
+    
+    }
+    .navbar ul{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .navbar ul li {
+       width: 100%;
+       display: block;
+    }
+
+
+    .dropdown{
+        display: none;
+    }
+
+    .dropdown ul{
+        list-style: none;
+        display: block;
+    }
+
+    .dropdown ul li{
+        width: 100%;
+    }
+    .dropdown ul li{
+     left: 200px;
+     top: 140px;
+     background-image: url(bluebg.jpg);
+     background-repeat: no-repeat;
+}
+.menu_bar ul li:focus-within .dropdown,
+.menu_bar ul li:hover .dropdown{
+     display: initial;
+    
+}
+
+.dropdown ul li a{
+    display: block;
+}
+
+#check:checked ~ .navbar{
+display: initial;
+}
+}
+
+/*END OF MENU*/
+
+

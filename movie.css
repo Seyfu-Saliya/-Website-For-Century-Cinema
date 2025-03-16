@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    grid-column-gap: 10px;
+}
+
+.menu_bar{
+    
+    grid-column:1/ 4;
+    position: sticky;  
+    top: 0;
+    font-family: 'Times New Roman';
+    font-weight:bolder;
+    background-color: #0C4A5E;
+    height: 71px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: auto; 
+    z-index: 1;      
+}
+.menu_bar ul a span {
+   position:fixed;
+   height: auto;
+   left: 0px; 
+   width: 25px;
+}
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li{
+    display: inline-block;
+    padding: 10px 30px;
+    position: relative;
+}
+.menu_bar ul li a{
+    display: block;
+    color: white;
+    text-decoration:none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.menu_bar ul li a:hover{
+    color: rgb(252, 216, 12) ;
+    background-color: #0C4A5E;
+}
+.dropdown ul li {
+    display: block;
+}
+.dropdown{
+    display: none;
+}
+.menu_bar ul li:focus-within .dropdown,
+.menu_bar ul li:hover .dropdown{
+     display: block;
+     position: absolute;
+     left: 0;
+     top: 100%;
+     background-color: #0C4A5E;
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li{
+    width: 150px;
+    padding: 10px;
+}
+/*END OF MENU*/
+
+.header{
+    grid-column: 1/ 4;
+    height: 70px;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    background-color: #0C4A5E;
+    font-size: large;
+    color: white;
+    word-spacing: 10px;
+    text-align: center;
+}
+h2{
+    font-weight: bold;
+    font-size: x-large;
+    color: rgb(9, 167, 230);
+    font-family: 'Times New Roman';
+    text-align: center;
+    }
+.poster1{
+    grid-column: 1/ 2;   
+}
+.poster1 img{ 
+    width: 390px;
+    height: 540px;
+}
+.blackadam{
+    grid-column: 2/3;
+}
+
+.blackadam li{
+color: rgb(9, 167, 230);
+font-size: large;
+font-weight: bold;
+}
+
+.blackvid{
+    grid-column: 3/4;
+    background-color:black;   
+}
+ .blackvid video{
+  
+    width: 500px;
+    height: 500px;
+}
+
+
+
+
+.blackvid  img{
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+
+#poster2{
+    grid-column: 1/ 2;
+   
+}
+#poster2 img{ 
+    width: 390px;
+    height: 530px;
+}
+
+.bigtrip{
+    grid-column: 2/3;
+}
+
+.bigtrip li{
+color: rgb(9, 167, 230);
+font-size: large;
+font-weight: bold;
+}
+.bigvid{
+    grid-column: 3/4;
+    background-color:black;   
+}
+ .bigvid video{
+    
+    width: 500px;
+    height: 500px;
+}
+.bigvid  img{
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+#poster3{
+    grid-column: 1/ 2;
+}
+#poster3 img{ 
+    width: 390px;
+    height: 530px;
+}
+.killer{
+    grid-column: 2/3;
+}
+.killer li{
+color: rgb(9, 167, 230);
+font-size: large;
+font-weight: bold;
+}
+.killvid{
+    grid-column: 3/4;
+    background-color:black;   
+}
+ .killvid video{
+    
+    width: 500px;
+    height: 500px;
+}
+.killvid  img{
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+#poster4{
+    grid-column: 1/ 2;
+   
+}
+#poster4 img{ 
+    width: 390px;
+    height: 530px;
+}
+
+.bad{
+    grid-column: 2/3;
+}
+
+.bad li{
+color: rgb(9, 167, 230);
+font-size: large;
+font-weight: bold;
+}
+
+.badvid{
+    grid-column: 3/4;
+    background-color:black;   
+}
+ .badvid video{
+    
+    width: 500px;
+    height: 500px;
+}
+.badvid  img{
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+#poster5{
+    grid-column: 1/ 2;
+   
+}
+#poster5 img{ 
+    width: 390px;
+    height: 530px;
+}
+
+
+.themenu{
+    grid-column: 2/3;
+}
+
+.me li{
+color: rgb(9, 167, 230);
+font-size: large;
+font-weight: bold;
+}
+
+.mevid{
+    grid-column: 3/4;
+    background-color:black;   
+}
+ .mevid video{
+    
+    width: 500px;
+    height: 500px;
+}
+.mevid  img{
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+
+#poster6{
+    grid-column: 1/ 2;
+   
+}
+#poster6 img{ 
+    width: 390px;
+    height: 530px;
+}
+
+.dune{
+    grid-column: 2/3;
+   
+}
+
+.dune li{
+color: rgb(9, 167, 230);
+font-size: large;
+font-weight: bold;
+}
+
+.dunevid{
+    grid-column: 3/4;
+    background-color:black;   
+}
+ .dunevid video{
+    
+    width: 500px;
+    height: 500px;
+}
+.dunevid  img{
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+.footer {
+    height: 50px;
+    grid-column: 1/4;
+    background-color: #0C4A5E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: auto; 
+   
+}
+.footer img{
+    align-items: right;
+    width: 40px;
+    height: 40px;
+}
+.footer {
+    grid-column: 1/4;
+    font-size: 23px;
+    text-align: left;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    
+} 
+

@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-items:stretch ;
+    justify-content: space-between; 
+    
+}
+.menu_bar{
+    grid-column:1/5;
+    grid-row: 1/2; 
+    position: sticky;  
+    top: 0;
+    font-family: 'Times New Roman';
+    font-weight:bolder;
+    background-color: #0C4A5E;
+    height: 71px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: auto;       
+}
+.menu_bar ul a span {
+   position:fixed;
+   height: auto;
+   left: 0px; 
+   width: 25px;
+}
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li{
+    display: inline-block;
+    padding: 10px 30px;
+    position: relative;
+}
+.menu_bar ul li a{
+    display: block;
+    color: white;
+    text-decoration:none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.menu_bar ul li a:hover{
+    color: rgb(252, 216, 12) ;
+    background-color: #0C4A5E;
+}
+.dropdown ul li {
+    display: block;
+}
+.dropdown{
+    display: none;
+}
+.menu_bar ul li:focus-within .dropdown,
+.menu_bar ul li:hover .dropdown{
+     display: block;
+     position: absolute;
+     left: 0;
+     top: 100%;
+     
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li{
+    width: 150px;
+    padding: 10px;
+    background-color: #0C4A5E;
+}
+
+
+#check{
+    display: none;
+}
+.menu_bar label{
+    font-size:20px;
+    font-weight:bolder;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+/*END OF MENU*/
+
+
+#header{
+    height: 70px;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    background-color: #0C4A5E;
+    font-size: large;
+    color: white;
+    word-spacing: 10px;
+    text-align: center;
+}
+table{
+    width: 100%;
+    
+}
+table td td{
+  align-items: center;
+}
+table img{
+    width: 300px;
+    height: 340px;
+}
+
+
+.movie1 dl dt {
+    font-weight: bold;
+    font-size:xx-large;
+    color: skyblue;
+    
+}
+.movie1 dd {
+    font-weight: bold;
+    font-size:x-large;
+    color: skyblue;
+    
+}
+.movie1 dd span {
+    font-weight: bold;
+    font-size:xx-large;
+    color: #FFA500;
+    
+}
+.movie1 dd img{
+        width: 50px;
+        height: 50px;
+    
+}
+.movie1 dd a{
+    text-decoration:none;
+    color: #f8f9f9;
+    text-decoration: none;
+    font-size: 20px;
+    background-color:rgb(9, 167, 230);
+    transition: all 0.3s;
+}
+.movie1 dd a:hover{
+    text-decoration:none;
+    color:rgb(9, 167, 230);
+    background-color: rgb(14, 13, 13);
+    transition: all 0.3s;
+}
+.movie2{
+    grid-column:2/3;
+}
+
+.movie2 dl dt {
+    font-weight: bold;
+    font-size:xx-large;
+    color: skyblue;
+    
+}
+.movie2 dd {
+    font-weight: bold;
+    font-size:x-large;
+    color: skyblue;
+    
+}
+.movie2 dd span {
+    font-weight: bold;
+    font-size:xx-large;
+    color: #FFA500;
+    
+}
+.movie2 dd img{
+        width: 50px;
+        height: 50px;
+    
+}
+
+.movie2 dd a{
+    text-decoration:none;
+    color: #f8f9f9;
+    text-decoration: none;
+    font-size: 20px;
+    background-color:rgb(9, 167, 230);
+    transition: all 0.3s;
+}
+.movie2 dd a:hover{
+    text-decoration:none;
+    color:rgb(9, 167, 230);
+    background-color: rgb(14, 13, 13);
+    transition: all 0.3s;
+}
+.movie3 dl dt {
+    font-weight: bold;
+    font-size:xx-large;
+    color: skyblue;
+    
+}
+.movie3 dd {
+    font-weight: bold;
+    font-size:x-large;
+    color: skyblue;
+    
+}
+.movie3 dd span {
+    font-weight: bold;
+    font-size:xx-large;
+    color: #FFA500;
+    
+}
+.movie3 dd img{
+        width: 50px;
+        height: 50px;
+    
+}
+
+.movie3 dd a{
+    text-decoration:none;
+    color: #f8f9f9;
+    text-decoration: none;
+    font-size: 20px;
+    background-color:rgb(9, 167, 230);
+    transition: all 0.3s;
+}
+.movie3 dd a:hover{
+    text-decoration:none;
+    color:rgb(9, 167, 230);
+    background-color: rgb(14, 13, 13);
+    transition: all 0.3s;
+}
+
+
+.movie4 dl dt {
+    font-weight: bold;
+    font-size:xx-large;
+    color: skyblue;
+    
+}
+.movie4 dd {
+    font-weight: bold;
+    font-size:x-large;
+    color: skyblue;
+    
+}
+.movie4 dd span {
+    font-weight: bold;
+    font-size:xx-large;
+    color: #FFA500;
+    
+}
+.movie4 dd img{
+        width: 50px;
+        height: 50px;
+    
+}
+.movie4 dd a{
+    text-decoration:none;
+    color: #f8f9f9;
+    text-decoration: none;
+    font-size: 20px;
+    background-color:rgb(9, 167, 230);
+    transition: all 0.3s;
+}
+.movie4 dd a:hover{
+    text-decoration:none;
+    color:rgb(9, 167, 230);
+    background-color: rgb(14, 13, 13);
+    transition: all 0.3s;
+}
+
+.movie5 dl dt {
+    font-weight: bold;
+    font-size:xx-large;
+    color: skyblue;
+    
+}
+.movie5 dd {
+    font-weight: bold;
+    font-size:x-large;
+    color: skyblue;
+    
+}
+.movie5 dd span {
+    font-weight: bold;
+    font-size:xx-large;
+    color: #FFA500;
+    
+}
+.movie5 dd img{
+        width: 50px;
+        height: 50px;
+    
+}
+.movie5 dd a{
+    text-decoration:none;
+    color: #f8f9f9;
+    text-decoration: none;
+    font-size: 20px;
+    background-color:rgb(9, 167, 230);
+    transition: all 0.3s;
+}
+.movie5 dd a:hover{
+    text-decoration:none;
+    color:rgb(9, 167, 230);
+    background-color: rgb(14, 13, 13);
+    transition: all 0.3s;
+}
+
+.movie6 dl dt {
+    font-weight: bold;
+    font-size:xx-large;
+    color: skyblue;
+    
+}
+.movie6 dd {
+    font-weight: bold;
+    font-size:x-large;
+    color: skyblue;
+    
+}
+.movie6 dd span {
+    font-weight: bold;
+    font-size:xx-large;
+    color: #FFA500;
+    
+}
+.movie6 dd img{
+        width: 50px;
+        height: 50px;
+    
+}
+.movie6 dd a{
+    text-decoration:none;
+    color: #f8f9f9;
+    text-decoration: none;
+    font-size: 20px;
+    background-color:rgb(9, 167, 230);
+    transition: all 0.3s;
+}
+.movie6 dd a:hover{
+    text-decoration:none;
+    color:rgb(9, 167, 230);
+    background-color: rgb(14, 13, 13);
+    transition: all 0.3s;
+}
+.footer {
+    height: 50px;
+    background-color: #0C4A5E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: auto; 
+   
+}
+.footer img{
+    align-items: right;
+    width: 40px;
+    height: 40px;
+}
+.footer {
+    grid-column: 1/5;
+    font-size: 23px;
+    text-align: left;
+    font-weight: bold;
+    color: rgb(248, 248, 248);
+    
+} 
+
+@media(max-width:991px){
+
+    .menu_bar{
+        padding: 20px;
+        width: 93%;
+        
+    }
+    .menu_bar label{
+        display: initial;
+    }
+    .menu_bar .navbar{
+        position: absolute;
+        top:100%;
+        left:0;
+        right:0;
+        background-image: url(bluebg.jpg);
+        display: none;
+    
+    }
+    .navbar ul{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .navbar ul li {
+       width: 100%;
+       display: block;
+    }
+
+
+    .dropdown{
+        display: none;
+    }
+
+    .dropdown ul{
+        list-style: none;
+        display: block;
+    }
+
+    .dropdown ul li{
+        width: 100%;
+    }
+    .dropdown ul li{
+     left: 200px;
+     top: 140px;
+     background-image: url(bluebg.jpg);
+     background-repeat: no-repeat;
+}
+.menu_bar ul li:focus-within .dropdown,
+.menu_bar ul li:hover .dropdown{
+     display: initial;
+    
+}
+
+.dropdown ul li a{
+    display: block;
+}
+
+#check:checked ~ .navbar{
+display: initial;
+}
+
+/*end of resposnsive menu*/
+
+
+.header{
+width: 100%;
+}
+.movie1{
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+.movie2{
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+.movie3{
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+.movie4{
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+.movie5{
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+.movie6{
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.footer{
+    width: 100%;
+}
+}
